@@ -1,0 +1,56 @@
+/* Removed complex styles to make it simple and beginner-like. 
+   Most styling is now handled directly by Bootstrap classes in index.html. */
+
+body {
+    /* Standard browser font, no custom Google Fonts */
+    font-family: 'Poppins', sans-serif;
+}
+
+:root {
+    --mint: #20c997;
+    /* Bootstrap teal, a nice minty green */
+    --mint-hover: #1aa179;
+}
+
+.text-mint {
+    color: var(--mint) !important;
+}
+
+.bg-mint {
+    background-color: var(--mint) !important;
+}
+
+.btn-mint {
+    background-color: var(--mint);
+    border-color: var(--mint);
+    color: white;
+}
+
+.btn-mint:hover {
+    background-color: var(--mint-hover);
+    border-color: var(--mint-hover);
+    color: white;
+}
+
+.h2 {
+    font-weight: 600;
+    font-size: 32px;
+}
+
+/* Hover Effects */
+.card {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+.btn {
+    transition: transform 0.2s ease;
+}
+
+.btn:hover {
+    transform: scale(1.05);
+}

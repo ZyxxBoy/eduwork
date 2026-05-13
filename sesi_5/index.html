@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>E-Commerce Produk</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="container">
+        <h1>Daftar Produk</h1>
+
+        <!-- Filter -->
+        <div class="filter-container">
+            <button onclick="filterProduk('Semua')">Semua</button>
+            <button onclick="filterProduk('Elektronik')">Elektronik</button>
+            <button onclick="filterProduk('Fashion')">Fashion</button>
+            <button onclick="filterProduk('Makanan')">Makanan</button>
+        </div>
+
+        <!-- Tempat Produk -->
+        <div id="product-list" class="product-list"></div>
+    </div>
+
+    <script src="scripts.js"></script>
+</body>
+
+</html>

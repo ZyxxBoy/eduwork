@@ -1,0 +1,406 @@
+<!-- <!DOCTYPE html>
+<html lang="id">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profil Website</title>
+
+    <!-- Bootstrap 5 CSS -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+<!-- Bootstrap Icons -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" rel="stylesheet">
+<!-- Google Font -->
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&display=swap" rel="stylesheet">
+<!-- Custom CSS -->
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top" id="mainNavbar">
+        <div class="container">
+            <a class="navbar-brand fw-bold" href="#">
+                <i class="bi bi-code-slash me-2"></i>Nauval
+            </a>
+            <button class="navbar-toggler border-0 shadow-none" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="#hero">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#about">Biodata</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#portfolio">Portofolio</a>
+                    </li>
+                    <li class="nav-item ms-lg-3">
+                        <a class="btn btn-outline-light btn-sm px-3 py-2" href="#contact">
+                            <i class="bi bi-envelope me-1"></i>Kontak
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="hero" class="hero-section d-flex align-items-center">
+        <div class="container">
+            <div class="row align-items-center g-5">
+                <div class="col-lg-7 col-md-6 text-center text-md-start">
+                    <h1 class="display-4 fw-800 mb-3 hero-title">
+                        Selamat Datang di <br>
+                        <span class="text-gradient">Website Saya</span>
+                    </h1>
+                    <p class="lead text-muted mb-4 hero-desc">
+                        Ini adalah contoh header dengan dua kolom. Kolom kiri berisi teks seperti ini.
+                        Saya seorang programmer yang bersemangat dalam membangun solusi digital.
+                    </p>
+                    <div class="d-flex gap-3 justify-content-center justify-content-md-start">
+                        <a href="#about" class="btn btn-primary btn-lg px-4 shadow-sm">
+                            Pelajari Lebih Lanjut <i class="bi bi-arrow-down-circle ms-2"></i>
+                        </a>
+                        <a href="#portfolio" class="btn btn-outline-secondary btn-lg px-4">
+                            Lihat Karya
+                        </a>
+                    </div>
+                </div>
+                <div class="col-lg-5 col-md-6 text-center">
+                    <div class="hero-img-wrapper">
+                        <img src="00b7ddf6582b12a469a74ed5dea97ade.jpg" alt="Foto Profil"
+                            class="img-fluid rounded-4 shadow-lg hero-img">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Me Section -->
+    <section id="about" class="py-5">
+        <div class="container">
+            <div class="text-center mb-5">
+                <h2 class="fw-bold section-heading">Tentang Saya</h2>
+                <p class="text-muted">Kenali saya lebih dekat melalui biodata singkat berikut</p>
+            </div>
+
+            <div class="row g-4 justify-content-center">
+                <div class="col-lg-4 col-md-6">
+                    <div class="about-card h-100">
+                        <div class="about-card-icon">
+                            <i class="bi bi-person-badge"></i>
+                        </div>
+                        <h5 class="fw-bold">Nama Lengkap</h5>
+                        <p class="text-muted mb-0">Nauval</p>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <div class="about-card h-100">
+                        <div class="about-card-icon">
+                            <i class="bi bi-mortarboard"></i>
+                        </div>
+                        <h5 class="fw-bold">Pendidikan</h5>
+                        <p class="text-muted mb-0">S1 Informatika</p>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <div class="about-card h-100">
+                        <div class="about-card-icon">
+                            <i class="bi bi-laptop"></i>
+                        </div>
+                        <h5 class="fw-bold">Pekerjaan</h5>
+                        <p class="text-muted mb-0">Programmer</p>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <div class="about-card h-100">
+                        <div class="about-card-icon">
+                            <i class="bi bi-envelope-at"></i>
+                        </div>
+                        <h5 class="fw-bold">Kontak</h5>
+                        <p class="text-muted mb-0">nauval@example.com</p>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <div class="about-card h-100">
+                        <div class="about-card-icon">
+                            <i class="bi bi-controller"></i>
+                        </div>
+                        <h5 class="fw-bold">Hobi</h5>
+                        <p class="text-muted mb-0">Membaca, Coding</p>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <div class="about-card h-100">
+                        <div class="about-card-icon">
+                            <i class="bi bi-geo-alt"></i>
+                        </div>
+                        <h5 class="fw-bold">Alamat</h5>
+                        <p class="text-muted mb-0">Jakarta</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Portfolio Section -->
+    <section id="portfolio" class="py-5 bg-light">
+        <div class="container">
+            <div class="text-center mb-5">
+                <h2 class="fw-bold section-heading">Portofolio</h2>
+                <p class="text-muted">Beberapa proyek yang pernah saya kerjakan</p>
+            </div>
+
+            <div class="row g-4">
+                <!-- Card 1 -->
+                <div class="col-lg-4 col-md-6">
+                    <div class="card portfolio-card border-0 shadow-sm h-100" role="button" data-bs-toggle="modal"
+                        data-bs-target="#projectModal1">
+                        <div class="card-img-top-wrapper">
+                            <img src="https://images.unsplash.com/photo-1498050108023-c5249f4df085?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80"
+                                class="card-img-top" alt="Proyek 1">
+                            <div class="card-overlay">
+                                <i class="bi bi-eye fs-2"></i>
+                                <span class="mt-2">Lihat Detail</span>
+                            </div>
+                        </div>
+                        <div class="card-body text-center p-4">
+                            <h5 class="card-title fw-bold">Proyek 1</h5>
+                            <p class="card-text text-muted">Web Development — Deskripsi proyek 1.</p>
+                            <div class="d-flex justify-content-center gap-2 mt-3">
+                                <span class="badge bg-primary-subtle text-primary">HTML</span>
+                                <span class="badge bg-primary-subtle text-primary">CSS</span>
+                                <span class="badge bg-primary-subtle text-primary">JS</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Card 2 -->
+                <div class="col-lg-4 col-md-6">
+                    <div class="card portfolio-card border-0 shadow-sm h-100" role="button" data-bs-toggle="modal"
+                        data-bs-target="#projectModal2">
+                        <div class="card-img-top-wrapper">
+                            <img src="https://images.unsplash.com/photo-1461749280684-dccba630e2f6?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80"
+                                class="card-img-top" alt="Proyek 2">
+                            <div class="card-overlay">
+                                <i class="bi bi-eye fs-2"></i>
+                                <span class="mt-2">Lihat Detail</span>
+                            </div>
+                        </div>
+                        <div class="card-body text-center p-4">
+                            <h5 class="card-title fw-bold">Proyek 2</h5>
+                            <p class="card-text text-muted">Backend API — Deskripsi proyek 2.</p>
+                            <div class="d-flex justify-content-center gap-2 mt-3">
+                                <span class="badge bg-primary-subtle text-primary">Python</span>
+                                <span class="badge bg-primary-subtle text-primary">Flask</span>
+                                <span class="badge bg-primary-subtle text-primary">SQL</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Card 3 -->
+                <div class="col-lg-4 col-md-6">
+                    <div class="card portfolio-card border-0 shadow-sm h-100" role="button" data-bs-toggle="modal"
+                        data-bs-target="#projectModal3">
+                        <div class="card-img-top-wrapper">
+                            <img src="https://images.unsplash.com/photo-1504868584819-f8e8b4b6d7e3?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80"
+                                class="card-img-top" alt="Proyek 3">
+                            <div class="card-overlay">
+                                <i class="bi bi-eye fs-2"></i>
+                                <span class="mt-2">Lihat Detail</span>
+                            </div>
+                        </div>
+                        <div class="card-body text-center p-4">
+                            <h5 class="card-title fw-bold">Proyek 3</h5>
+                            <p class="card-text text-muted">Data Analytics — Deskripsi proyek 3.</p>
+                            <div class="d-flex justify-content-center gap-2 mt-3">
+                                <span class="badge bg-primary-subtle text-primary">Python</span>
+                                <span class="badge bg-primary-subtle text-primary">Pandas</span>
+                                <span class="badge bg-primary-subtle text-primary">Chart.js</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section (anchor for nav) -->
+    <section id="contact" class="py-5">
+        <div class="container text-center">
+            <h2 class="fw-bold section-heading mb-3">Hubungi Saya</h2>
+            <p class="text-muted mb-4">Tertarik untuk bekerja sama? Jangan ragu untuk menghubungi saya.</p>
+            <a href="mailto:nauval@example.com" class="btn btn-primary btn-lg px-5 shadow-sm">
+                <i class="bi bi-envelope me-2"></i>Kirim Email
+            </a>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="py-4">
+        <div class="container text-center">
+            <p class="mb-1 fw-semibold">&copy; 2026 Nauval. All rights reserved.</p>
+            <div class="d-flex justify-content-center gap-3 mt-2">
+                <a href="#" class="footer-social"><i class="bi bi-github"></i></a>
+                <a href="#" class="footer-social"><i class="bi bi-linkedin"></i></a>
+                <a href="#" class="footer-social"><i class="bi bi-instagram"></i></a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- ======================= MODALS ======================= -->
+
+    <!-- Modal Proyek 1 -->
+    <div class="modal fade" id="projectModal1" tabindex="-1" aria-labelledby="projectModal1Label" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-lg">
+            <div class="modal-content border-0 shadow-lg rounded-4 overflow-hidden">
+                <div class="modal-img-header">
+                    <img src="https://images.unsplash.com/photo-1498050108023-c5249f4df085?ixlib=rb-4.0.3&auto=format&fit=crop&w=900&q=80"
+                        class="w-100" alt="Proyek 1">
+                </div>
+                <div class="modal-body p-4">
+                    <h4 class="fw-bold" id="projectModal1Label">Proyek 1 — Web Development</h4>
+                    <p class="text-muted">
+                        Proyek website responsif yang dibangun menggunakan HTML, CSS, dan JavaScript.
+                        Menampilkan desain modern dengan animasi halus dan performa tinggi.
+                    </p>
+                    <div class="d-flex gap-2 flex-wrap mb-3">
+                        <span class="badge bg-primary-subtle text-primary">HTML</span>
+                        <span class="badge bg-primary-subtle text-primary">CSS</span>
+                        <span class="badge bg-primary-subtle text-primary">JavaScript</span>
+                    </div>
+                </div>
+                <div class="modal-footer border-0 pt-0 px-4 pb-4">
+                    <button type="button" class="btn btn-secondary rounded-pill px-4"
+                        data-bs-dismiss="modal">Tutup</button>
+                    <a href="#" class="btn btn-primary rounded-pill px-4">
+                        <i class="bi bi-box-arrow-up-right me-1"></i>Lihat Proyek
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal Proyek 2 -->
+    <div class="modal fade" id="projectModal2" tabindex="-1" aria-labelledby="projectModal2Label" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-lg">
+            <div class="modal-content border-0 shadow-lg rounded-4 overflow-hidden">
+                <div class="modal-img-header">
+                    <img src="https://images.unsplash.com/photo-1461749280684-dccba630e2f6?ixlib=rb-4.0.3&auto=format&fit=crop&w=900&q=80"
+                        class="w-100" alt="Proyek 2">
+                </div>
+                <div class="modal-body p-4">
+                    <h4 class="fw-bold" id="projectModal2Label">Proyek 2 — Backend API</h4>
+                    <p class="text-muted">
+                        API backend yang dibangun dengan Python Flask dan database SQL. Mendukung autentikasi,
+                        CRUD operations, dan dokumentasi API yang lengkap.
+                    </p>
+                    <div class="d-flex gap-2 flex-wrap mb-3">
+                        <span class="badge bg-primary-subtle text-primary">Python</span>
+                        <span class="badge bg-primary-subtle text-primary">Flask</span>
+                        <span class="badge bg-primary-subtle text-primary">SQL</span>
+                    </div>
+                </div>
+                <div class="modal-footer border-0 pt-0 px-4 pb-4">
+                    <button type="button" class="btn btn-secondary rounded-pill px-4"
+                        data-bs-dismiss="modal">Tutup</button>
+                    <a href="#" class="btn btn-primary rounded-pill px-4">
+                        <i class="bi bi-box-arrow-up-right me-1"></i>Lihat Proyek
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal Proyek 3 -->
+    <div class="modal fade" id="projectModal3" tabindex="-1" aria-labelledby="projectModal3Label" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-lg">
+            <div class="modal-content border-0 shadow-lg rounded-4 overflow-hidden">
+                <div class="modal-img-header">
+                    <img src="https://images.unsplash.com/photo-1504868584819-f8e8b4b6d7e3?ixlib=rb-4.0.3&auto=format&fit=crop&w=900&q=80"
+                        class="w-100" alt="Proyek 3">
+                </div>
+                <div class="modal-body p-4">
+                    <h4 class="fw-bold" id="projectModal3Label">Proyek 3 — Data Analytics</h4>
+                    <p class="text-muted">
+                        Dashboard analisis data interaktif menggunakan Python dan Chart.js.
+                        Visualisasi data real-time dengan grafik yang dinamis dan responsif.
+                    </p>
+                    <div class="d-flex gap-2 flex-wrap mb-3">
+                        <span class="badge bg-primary-subtle text-primary">Python</span>
+                        <span class="badge bg-primary-subtle text-primary">Pandas</span>
+                        <span class="badge bg-primary-subtle text-primary">Chart.js</span>
+                    </div>
+                </div>
+                <div class="modal-footer border-0 pt-0 px-4 pb-4">
+                    <button type="button" class="btn btn-secondary rounded-pill px-4"
+                        data-bs-dismiss="modal">Tutup</button>
+                    <a href="#" class="btn btn-primary rounded-pill px-4">
+                        <i class="bi bi-box-arrow-up-right me-1"></i>Lihat Proyek
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Bootstrap 5 JS Bundle -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Smooth scroll & Navbar scroll effect -->
+    <script>
+        // Navbar background on scroll
+        const navbar = document.getElementById('mainNavbar');
+        window.addEventListener('scroll', () => {
+            if (window.scrollY > 50) {
+                navbar.classList.add('navbar-scrolled');
+            } else {
+                navbar.classList.remove('navbar-scrolled');
+            }
+        });
+
+        // Smooth scroll for anchor links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                const href = this.getAttribute('href');
+                if (href === '#') return;
+                e.preventDefault();
+                const target = document.querySelector(href);
+                if (target) {
+                    const offset = 80;
+                    const top = target.getBoundingClientRect().top + window.scrollY - offset;
+                    window.scrollTo({ top, behavior: 'smooth' });
+
+                    // Close mobile nav
+                    const navCollapse = document.getElementById('navbarNav');
+                    const bsCollapse = bootstrap.Collapse.getInstance(navCollapse);
+                    if (bsCollapse) bsCollapse.hide();
+                }
+            });
+        });
+
+        // Intersection Observer for fade-in animations
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('fade-in-visible');
+                }
+            });
+        }, { threshold: 0.1 });
+
+        document.querySelectorAll('.about-card, .portfolio-card, .section-heading').forEach(el => {
+            el.classList.add('fade-in');
+            observer.observe(el);
+        });
+    </script>
+
+</body>
+
+</html>
