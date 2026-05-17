@@ -1,0 +1,54 @@
+/* ---- Base ---- */
+body {
+    background-color: #f4f6f8;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #2d2d2d;
+}
+
+/* ---- Card Form ---- */
+.card {
+    border: none;
+    border-radius: 14px;
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.08);
+}
+
+/* ---- Header Judul ---- */
+.header-title {
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: #1a1a2e;
+}
+
+/* ---- Label Form ---- */
+.form-label {
+    font-weight: 600;
+    font-size: 0.88rem;
+    color: #495057;
+}
+
+/* ---- Input & Select ---- */
+.form-control:focus,
+.form-select:focus {
+    border-color: #1a1a2e;
+    box-shadow: 0 0 0 0.2rem rgba(26, 26, 46, 0.15);
+}
+
+/* ---- Tombol Submit ---- */
+.btn-primary {
+    background-color: #1a1a2e;
+    border-color: #1a1a2e;
+    font-weight: 600;
+    padding: 10px;
+    border-radius: 8px;
+}
+
+.btn-primary:hover {
+    background-color: #2e2e50;
+    border-color: #2e2e50;
+}
+
+/* ---- Link Katalog ---- */
+.btn-outline-success {
+    font-weight: 600;
+    border-radius: 8px;
+}
