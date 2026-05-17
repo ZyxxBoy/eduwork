@@ -1,6 +1,6 @@
 <?php
 
-require_once 'koneksi.php';
+require_once '../config/koneksi.php';
 
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $nama      = trim($_POST['nama_produk']);
@@ -17,7 +17,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         $ext = pathinfo($filename, PATHINFO_EXTENSION);
         if (in_array(strtolower($ext), $allowed)) {
             $new_filename = time() . '_' . basename($filename);
-            move_uploaded_file($_FILES['gambar']['tmp_name'], "img/" . $new_filename);
+            move_uploaded_file($_FILES['gambar']['tmp_name'], "../assets/img/" . $new_filename);
             $gambar = $new_filename;
         }
     }
@@ -28,7 +28,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
             <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
             </head><body class="bg-light"><div class="container mt-5">
             <div class="alert alert-danger">Gagal! Data tidak boleh ada yang kosong.</div>
-            <a href="produk/input/input.php" class="btn btn-secondary">Kembali</a>
+            <a href="../admin/tambah.php" class="btn btn-secondary">Kembali</a>
             </div></body></html>';
         exit;
     }
@@ -47,14 +47,14 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     mysqli_close($koneksi);
 
     if ($berhasil) {
-        header("Location: produk/input/input.php?status=sukses");
+        header("Location: ../admin/tambah.php?status=sukses");
         exit;
     } else {
         echo '<!DOCTYPE html><html lang="id"><head>
             <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
             </head><body class="bg-light"><div class="container mt-5">
             <div class="alert alert-danger">Gagal menyimpan ke database! Cek apakah tabel sudah dibuat.</div>
-            <a href="produk/input/input.php" class="btn btn-secondary">Kembali</a>
+            <a href="../admin/tambah.php" class="btn btn-secondary">Kembali</a>
             </div></body></html>';
     }
 }

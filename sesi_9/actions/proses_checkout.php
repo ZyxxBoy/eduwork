@@ -1,6 +1,6 @@
 <?php
 session_start();
-require_once 'koneksi.php';
+require_once '../config/koneksi.php';
 
 if ($_SERVER['REQUEST_METHOD'] == 'POST' && isset($_SESSION['keranjang']) && !empty($_SESSION['keranjang'])) {
     $nama = isset($_POST['nama']) ? trim($_POST['nama']) : 'Pelanggan';
@@ -59,14 +59,11 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST' && isset($_SESSION['keranjang']) && !em
     // 4. Bersihkan session keranjang
     unset($_SESSION['keranjang']);
     
-    // Simpan data pesanan terakhir untuk konfirmasi WA di halaman sukses
-    $_SESSION['last_order'] = [
-        'nama' => $nama,
-        'pembayaran' => $pembayaran
-    ];
+    // Simpan order_id untuk ditampilkan di halaman invoice (sukses.php)
+    $_SESSION['last_order_id'] = $order_id;
     
-    header("Location: sukses.php");
+    header("Location: ../sukses.php");
     exit;
 }
 
-header("Location: index.php");
+header("Location: ../index.php");

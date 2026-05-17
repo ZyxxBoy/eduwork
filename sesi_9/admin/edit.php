@@ -1,5 +1,5 @@
 <?php
-require_once '../koneksi.php';
+require_once '../config/koneksi.php';
 
 // Proses update data jika form disubmit
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
@@ -23,7 +23,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
             $ext = pathinfo($filename, PATHINFO_EXTENSION);
             if (in_array(strtolower($ext), $allowed)) {
                 $new_filename = time() . '_' . basename($filename);
-                move_uploaded_file($_FILES['gambar']['tmp_name'], "../img/" . $new_filename);
+                move_uploaded_file($_FILES['gambar']['tmp_name'], "../assets/img/" . $new_filename);
                 $query_tambahan = ", gambar=?";
                 $params[] = $new_filename;
                 $types .= "s";
@@ -80,7 +80,7 @@ mysqli_stmt_close($stmt);
     <!-- Bootstrap 5 CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
     <!-- Path disesuaikan karena edit.php berada di sesi_9/produk -->
-    <link rel="stylesheet" href="../css/katalog.css"> 
+    <link rel="stylesheet" href="../assets/css/katalog.css"> 
     <style>
         .header-title { font-weight: 700; color: #333; }
     </style>
@@ -137,7 +137,7 @@ mysqli_stmt_close($stmt);
                     <div class="mb-3">
                         <label class="form-label fw-bold">Gambar Produk</label><br>
                         <?php if (!empty($produk['gambar'])): ?>
-                            <img src="../img/<?= htmlspecialchars($produk['gambar']) ?>" alt="Gambar Saat Ini" width="100" class="mb-2" style="border-radius:8px;">
+                            <img src="../assets/img/<?= htmlspecialchars($produk['gambar']) ?>" alt="Gambar Saat Ini" width="100" class="mb-2" style="border-radius:8px;">
                         <?php else: ?>
                             <span class="badge bg-secondary mb-2">Belum ada gambar</span>
                         <?php endif; ?>

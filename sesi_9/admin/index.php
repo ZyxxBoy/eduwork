@@ -1,6 +1,6 @@
 <?php
 // Pastikan file koneksi ada di satu tingkat folder sebelumnya
-require_once '../koneksi.php';
+require_once '../config/koneksi.php';
 ?>
 <!DOCTYPE html>
 <html lang="id">
@@ -48,7 +48,7 @@ require_once '../koneksi.php';
             <h4 class="mb-0">Daftar Produk</h4>
             <div>
                 <a href="../index.php" class="btn btn-secondary btn-sm fw-bold me-2">🔙 Katalog</a>
-                <a href="input/input.php" class="btn btn-light btn-sm fw-bold">+ Tambah Produk</a>
+                <a href="tambah.php" class="btn btn-light btn-sm fw-bold">+ Tambah Produk</a>
             </div>
         </div>
         <div class="card-body">
@@ -80,7 +80,7 @@ require_once '../koneksi.php';
                                     <td class="text-center"><?= $no++ ?></td>
                                     <td class="text-center">
                                         <?php if (!empty($row['gambar'])): ?>
-                                            <img src="../img/<?= htmlspecialchars($row['gambar']) ?>" alt="Gambar" width="50" height="50" style="object-fit:cover; border-radius:4px;">
+                                            <img src="../assets/img/<?= htmlspecialchars($row['gambar']) ?>" alt="Gambar" width="50" height="50" style="object-fit:cover; border-radius:4px;">
                                         <?php else: ?>
                                             <span class="badge bg-secondary">No Image</span>
                                         <?php endif; ?>

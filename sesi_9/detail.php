@@ -1,6 +1,6 @@
 <?php
 session_start();
-require_once 'koneksi.php';
+require_once 'config/koneksi.php';
 
 if (!isset($_GET['id']) || empty($_GET['id'])) {
     header("Location: index.php");
@@ -143,7 +143,7 @@ $ikon  = $ikon_kategori[$produk['kategori']] ?? '📦';
             <!-- Bagian Gambar -->
             <div class="col-md-5 border-end">
                 <?php if (!empty($produk['gambar'])): ?>
-                    <img src="img/<?= htmlspecialchars($produk['gambar']) ?>" class="detail-image" alt="Gambar Produk">
+                    <img src="assets/img/<?= htmlspecialchars($produk['gambar']) ?>" class="detail-image" alt="Gambar Produk">
                 <?php else: ?>
                     <div class="detail-image-wrapper"><?= $ikon ?></div>
                 <?php endif; ?>
@@ -182,7 +182,7 @@ $ikon  = $ikon_kategori[$produk['kategori']] ?? '📦';
                             ⚠️ Maaf, Stok Produk Habis
                         </div>
                     <?php else: ?>
-                        <form action="proses_keranjang.php" method="POST" class="action-buttons mt-4 pt-3 border-top w-100">
+                        <form action="actions/proses_keranjang.php" method="POST" class="action-buttons mt-4 pt-3 border-top w-100">
                             <input type="hidden" name="id" value="<?= $produk['id'] ?>">
                             <input type="hidden" name="action" id="actionType" value="keranjang">
                             

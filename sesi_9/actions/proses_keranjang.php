@@ -18,9 +18,9 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST' && isset($_POST['id'])) {
 
     // Redirect sesuai action
     if ($action === 'beli') {
-        header("Location: checkout.php");
+        header("Location: ../checkout.php");
     } else {
-        header("Location: keranjang.php");
+        header("Location: ../keranjang.php");
     }
     exit;
 }
@@ -31,8 +31,8 @@ if (isset($_GET['hapus'])) {
     if (isset($_SESSION['keranjang'][$id_hapus])) {
         unset($_SESSION['keranjang'][$id_hapus]);
     }
-    header("Location: keranjang.php");
+    header("Location: ../keranjang.php");
     exit;
 }
 
-header("Location: index.php");
+header("Location: ../index.php");

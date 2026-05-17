@@ -1,7 +1,7 @@
 <?php
 session_start();
 
-require_once 'koneksi.php';
+require_once 'config/koneksi.php';
 
 // Ambil filter kategori dari URL (GET)
 $filter_kategori = isset($_GET['kategori']) ? trim($_GET['kategori']) : '';
@@ -26,7 +26,7 @@ $result_kategori = mysqli_query($koneksi, "SELECT DISTINCT kategori FROM produk 
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Katalog Produk - Sesi 8</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="css/katalog.css">
+    <link rel="stylesheet" href="assets/css/katalog.css">
 </head>
 <body>
 
@@ -41,7 +41,7 @@ $result_kategori = mysqli_query($koneksi, "SELECT DISTINCT kategori FROM produk 
                     <span class="badge bg-danger rounded-pill"><?= array_sum($_SESSION['keranjang']) ?></span>
                 <?php endif; ?>
             </a>
-            <a href="produk/index.php" class="btn btn-add">Kelola Produk</a>
+            <a href="admin/index.php" class="btn btn-add">Kelola Produk</a>
         </div>
     </div>
 </nav>
@@ -107,7 +107,7 @@ $result_kategori = mysqli_query($koneksi, "SELECT DISTINCT kategori FROM produk 
                 <div class="empty-icon">📭</div>
                 <h5>Belum ada produk</h5>
                 <p>Silakan tambahkan produk terlebih dahulu.</p>
-                <a href="produk/index.php" class="btn btn-dark mt-2">+ Tambah Produk</a>
+                <a href="admin/index.php" class="btn btn-dark mt-2">+ Tambah Produk</a>
             </div>
         </div>
         <?php else: ?>
@@ -125,7 +125,7 @@ $result_kategori = mysqli_query($koneksi, "SELECT DISTINCT kategori FROM produk 
                         </div>
                     <?php endif; ?>
                     <?php if (!empty($produk['gambar'])): ?>
-                        <img src="img/<?= htmlspecialchars($produk['gambar']) ?>" class="card-img-top" alt="Gambar Produk" style="height: 180px; object-fit: cover; width: 100%;">
+                        <img src="assets/img/<?= htmlspecialchars($produk['gambar']) ?>" class="card-img-top" alt="Gambar Produk" style="height: 180px; object-fit: cover; width: 100%;">
                     <?php else: ?>
                         <div class="card-img-top"><?= $ikon ?></div>
                     <?php endif; ?>

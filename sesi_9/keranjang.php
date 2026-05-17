@@ -1,6 +1,6 @@
 <?php
 session_start();
-require_once 'koneksi.php';
+require_once 'config/koneksi.php';
 
 $keranjang = isset($_SESSION['keranjang']) ? $_SESSION['keranjang'] : [];
 $produk_list = [];
@@ -89,7 +89,7 @@ if (!empty($keranjang)) {
                                         <td class="ps-4 py-3">
                                             <div class="d-flex align-items-center">
                                                 <?php if (!empty($item['gambar'])): ?>
-                                                    <img src="img/<?= htmlspecialchars($item['gambar']) ?>" class="cart-img me-3" alt="Produk">
+                                                    <img src="assets/img/<?= htmlspecialchars($item['gambar']) ?>" class="cart-img me-3" alt="Produk">
                                                 <?php else: ?>
                                                     <div class="cart-img me-3 bg-secondary d-flex justify-content-center align-items-center text-white fs-2">📦</div>
                                                 <?php endif; ?>
@@ -103,7 +103,7 @@ if (!empty($keranjang)) {
                                         <td class="text-center fw-bold"><?= $item['kuantitas'] ?></td>
                                         <td class="fw-bold text-primary">Rp <?= number_format($item['subtotal'], 0, ',', '.') ?></td>
                                         <td class="text-center pe-4">
-                                            <a href="proses_keranjang.php?hapus=<?= $item['id'] ?>" class="btn btn-sm btn-outline-danger" onclick="return confirm('Hapus item ini dari keranjang?')">Hapus</a>
+                                            <a href="actions/proses_keranjang.php?hapus=<?= $item['id'] ?>" class="btn btn-sm btn-outline-danger" onclick="return confirm('Hapus item ini dari keranjang?')">Hapus</a>
                                         </td>
                                     </tr>
                                     <?php endforeach; ?>

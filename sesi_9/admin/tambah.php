@@ -6,7 +6,7 @@
     <title>Tambah Produk - Sesi 8</title>
     <!-- Bootstrap 5 CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="../../css/index.css">
+    <link rel="stylesheet" href="../assets/css/index.css">
 </head>
 <body>
 
@@ -20,7 +20,7 @@
                     <div class="alert alert-success">Produk berhasil ditambahkan ke database!</div>
                 <?php endif; ?>
 
-                <form id="productForm" action="../../proses.php" method="POST" enctype="multipart/form-data" novalidate>
+                <form id="productForm" action="../actions/proses_produk.php" method="POST" enctype="multipart/form-data" novalidate>
                     <div class="mb-3">
                         <label class="form-label">Nama Produk</label>
                         <input type="text" name="nama_produk" id="nama" class="form-control" placeholder="Contoh: Laptop Asus">
@@ -63,7 +63,7 @@
                 </form>
 
                 <div class="mt-3 text-center">
-                    <a href="../../index.php" class="btn btn-outline-success btn-sm">🛒 Lihat Katalog Produk</a>
+                    <a href="../index.php" class="btn btn-outline-success btn-sm">🛒 Lihat Katalog Produk</a>
                 </div>
             </div>
         </div>

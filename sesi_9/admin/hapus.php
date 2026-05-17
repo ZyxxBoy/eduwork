@@ -1,5 +1,5 @@
 <?php
-require_once '../koneksi.php';
+require_once '../config/koneksi.php';
 
 if (isset($_GET['id'])) {
     $id = (int)$_GET['id'];

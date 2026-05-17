@@ -1,6 +1,6 @@
 <?php
 session_start();
-require_once 'koneksi.php';
+require_once 'config/koneksi.php';
 
 $keranjang = isset($_SESSION['keranjang']) ? $_SESSION['keranjang'] : [];
 
@@ -51,7 +51,7 @@ mysqli_stmt_close($stmt);
             <div class="card border-0 shadow-sm mb-4">
                 <div class="card-body p-4">
                     <h5 class="fw-bold mb-4">Informasi Pengiriman</h5>
-                    <form action="proses_checkout.php" method="POST" id="checkoutForm">
+                    <form action="actions/proses_checkout.php" method="POST" id="checkoutForm">
                         <div class="mb-3">
                             <label class="form-label fw-bold">Nama Lengkap</label>
                             <input type="text" name="nama" class="form-control" required placeholder="Contoh: Budi Santoso">
